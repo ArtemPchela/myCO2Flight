@@ -1,0 +1,163 @@
+.header {
+  background: #3a3a6b;
+  font-weight: 600;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: #ffffff;
+  letter-spacing: 0.1rem
+}
+
+.navigation {
+  display: none;
+  transition: fadeOut 0.5s ease;
+  overflow: hidden;
+  opacity: 0;
+  background: none;
+}
+
+.active {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: fadeIn 0.5s ease;
+  opacity: 1;
+  align-content: center;
+  overflow-y: hidden;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: #383893;
+}
+
+.active a {
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: yellow;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.activeLink {
+  color: yellow;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2.5rem;
+    opacity: 1;
+    position: static;
+  }
+}
+
+.navigation a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+/*BURGER MENU*/
+.button {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    display: none;
+  }
+}
+
+
+.button::before,
+.button::after {
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 1rem;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.button::before {
+  top: .9rem;
+  transform: rotate(0);
+}
+
+.button::after {
+  top: 1.5rem;
+  transform: rotate(0);
+}
+
+
+.active::before {
+  top: 1.2rem;
+  transform: rotate(135deg);
+}
+
+.active::after {
+  top: 1.2rem;
+  transform: rotate(-135deg);
+}

@@ -1,0 +1,11 @@
+.footer {
+}
+
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  margin: 1rem auto;
+}

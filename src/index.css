@@ -1,0 +1,33 @@
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a, a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+html,
+body {
+  font-size: 1rem;
+  background-color: #101111;
+  font-family: "Roboto Light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.wrapper {
+  min-height: 100vh;
+}

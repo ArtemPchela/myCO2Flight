@@ -1,0 +1,43 @@
+.flight_chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 400px;
+  width: 300px;
+}
+
+.flight_chart_wrapper {
+  display: flex;
+  /* margin: 0 auto; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.flight_chart_select {
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  border-color: hsl(0, 0%, 80%);
+  padding-left: 10px;
+  color: hsl(0, 0%, 50%);
+  font-size: 1rem;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 38px;
+  outline: 0!important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}

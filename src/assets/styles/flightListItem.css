@@ -1,0 +1,27 @@
+.flight_list_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  min-height: 250px;
+  float: left;
+  margin: 1rem;
+  box-shadow: 0 4px 6px 0 rgba(255, 251, 22, 0.08);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.flight_delete {
+  color: white;
+  transition: all .7s ease-out;
+  border: 1px solid white;
+  padding: 7px 7px;
+  cursor: pointer;
+}
+
+.flight_delete:hover {
+  color: red;
+  transition: all .3s ease-out;
+  border: 1px solid red;
+}

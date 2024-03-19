@@ -1,0 +1,33 @@
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home_wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 5rem auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home_wrapper h3 {
+  margin: 1rem 0;
+}
+
+.home_wrapper h4 a {
+  color: white;
+  transition: all .7s ease-out;
+  border: 1px solid white;
+  padding: 7px 7px;
+}
+
+.home_wrapper h4 a:hover {
+  color: yellow;
+  transition: all .3s ease-out;
+  border: 1px solid yellow;
+  padding: 7px 7px;
+}
